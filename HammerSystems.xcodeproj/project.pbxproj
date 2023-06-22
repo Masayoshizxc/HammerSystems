@@ -13,7 +13,13 @@
 		AE82EE002A449DA300C366C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE82EDFF2A449DA300C366C3 /* ViewController.swift */; };
 		AE82EE052A449DA400C366C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE82EE042A449DA400C366C3 /* Assets.xcassets */; };
 		AE82EE082A449DA400C366C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE82EE062A449DA400C366C3 /* LaunchScreen.storyboard */; };
-		AEECAFEA2A44A479003616F6 /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AEECAFE92A44A479003616F6 /* swiftlint.yml */; };
+		AEECAFF22A44A842003616F6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AEECAFF12A44A842003616F6 /* .swiftlint.yml */; };
+		AEECAFF52A44AA53003616F6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECAFF42A44AA53003616F6 /* Coordinator.swift */; };
+		AEECAFF72A44ABBF003616F6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECAFF62A44ABBF003616F6 /* MainCoordinator.swift */; };
+		AEECAFFA2A44ABCD003616F6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECAFF92A44ABCD003616F6 /* TabBarController.swift */; };
+		AEECAFFC2A44AF60003616F6 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECAFFB2A44AF60003616F6 /* TabBarCoordinator.swift */; };
+		AEECB0022A44B170003616F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0012A44B170003616F6 /* BaseViewController.swift */; };
+		AEECB0042A44B1CF003616F6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0032A44B1CF003616F6 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +31,13 @@
 		AE82EE042A449DA400C366C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE82EE072A449DA400C366C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE82EE092A449DA400C366C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEECAFE92A44A479003616F6 /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
+		AEECAFF12A44A842003616F6 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AEECAFF42A44AA53003616F6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AEECAFF62A44ABBF003616F6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		AEECAFF92A44ABCD003616F6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AEECAFFB2A44AF60003616F6 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		AEECB0012A44B170003616F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AEECB0032A44B1CF003616F6 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		F0C01D920E29A41AC9E1A360 /* Pods-HammerSystems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HammerSystems.release.xcconfig"; path = "Target Support Files/Pods-HammerSystems/Pods-HammerSystems.release.xcconfig"; sourceTree = "<group>"; };
 		F2B3738E37F2A1CE4574019D /* Pods_HammerSystems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HammerSystems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -45,7 +57,7 @@
 		AE82EDEF2A449DA300C366C3 = {
 			isa = PBXGroup;
 			children = (
-				AEECAFE92A44A479003616F6 /* swiftlint.yml */,
+				AEECAFF12A44A842003616F6 /* .swiftlint.yml */,
 				AE82EDFA2A449DA300C366C3 /* HammerSystems */,
 				AE82EDF92A449DA300C366C3 /* Products */,
 				D8B49F612A15B10C96813FE7 /* Pods */,
@@ -65,13 +77,51 @@
 			isa = PBXGroup;
 			children = (
 				AE82EDFB2A449DA300C366C3 /* AppDelegate.swift */,
+				AEECB0032A44B1CF003616F6 /* R.generated.swift */,
 				AE82EDFD2A449DA300C366C3 /* SceneDelegate.swift */,
 				AE82EDFF2A449DA300C366C3 /* ViewController.swift */,
+				AEECB0002A44B158003616F6 /* Extensions */,
+				AEECAFFF2A44B151003616F6 /* Reusable */,
+				AEECAFF82A44ABC2003616F6 /* TabBar */,
+				AEECAFF32A44AA48003616F6 /* Coordinator */,
 				AE82EE042A449DA400C366C3 /* Assets.xcassets */,
 				AE82EE062A449DA400C366C3 /* LaunchScreen.storyboard */,
 				AE82EE092A449DA400C366C3 /* Info.plist */,
 			);
 			path = HammerSystems;
+			sourceTree = "<group>";
+		};
+		AEECAFF32A44AA48003616F6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AEECAFF42A44AA53003616F6 /* Coordinator.swift */,
+				AEECAFF62A44ABBF003616F6 /* MainCoordinator.swift */,
+				AEECAFFB2A44AF60003616F6 /* TabBarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AEECAFF82A44ABC2003616F6 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AEECAFF92A44ABCD003616F6 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		AEECAFFF2A44B151003616F6 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB0012A44B170003616F6 /* BaseViewController.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		AEECB0002A44B158003616F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D8B49F612A15B10C96813FE7 /* Pods */ = {
@@ -103,7 +153,7 @@
 				AE82EDF52A449DA300C366C3 /* Frameworks */,
 				AE82EDF62A449DA300C366C3 /* Resources */,
 				65C5EAD52C60D99C9F98A441 /* [CP] Embed Pods Frameworks */,
-				AEECAFE62A44A317003616F6 /* SwiftLint */,
+				AEECAFE62A44A317003616F6 /* Run script */,
 			);
 			buildRules = (
 			);
@@ -152,8 +202,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEECAFF22A44A842003616F6 /* .swiftlint.yml in Resources */,
 				AE82EE082A449DA400C366C3 /* LaunchScreen.storyboard in Resources */,
-				AEECAFEA2A44A479003616F6 /* swiftlint.yml in Resources */,
 				AE82EE052A449DA400C366C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +250,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HammerSystems/Pods-HammerSystems-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AEECAFE62A44A317003616F6 /* SwiftLint */ = {
+		AEECAFE62A44A317003616F6 /* Run script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,14 +259,14 @@
 			);
 			inputPaths = (
 			);
-			name = SwiftLint;
+			name = "Run script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" \n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --fix && ${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -225,8 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEECAFF52A44AA53003616F6 /* Coordinator.swift in Sources */,
 				AE82EE002A449DA300C366C3 /* ViewController.swift in Sources */,
+				AEECB0042A44B1CF003616F6 /* R.generated.swift in Sources */,
 				AE82EDFC2A449DA300C366C3 /* AppDelegate.swift in Sources */,
+				AEECAFFC2A44AF60003616F6 /* TabBarCoordinator.swift in Sources */,
+				AEECAFFA2A44ABCD003616F6 /* TabBarController.swift in Sources */,
+				AEECB0022A44B170003616F6 /* BaseViewController.swift in Sources */,
+				AEECAFF72A44ABBF003616F6 /* MainCoordinator.swift in Sources */,
 				AE82EDFE2A449DA300C366C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

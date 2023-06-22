@@ -9,9 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var coordinator: MainCoordinator?
+
+    private lazy var btn: UIButton={
+        let b = UIButton()
+        return b
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple
+        view.backgroundColor = .red
+
+        view.addSubview(btn)
     }
 
 }
