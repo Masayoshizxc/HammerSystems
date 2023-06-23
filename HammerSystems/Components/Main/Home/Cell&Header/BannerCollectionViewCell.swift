@@ -12,8 +12,10 @@ class BannerCollectionViewCell: UICollectionViewCell{
     
     lazy var image: UIImageView = {
         let i = UIImageView()
-        i.frame = CGRect(x: 0, y: 0, width: 300, height: 112)
-        i.layer.cornerRadius = 10
+        clipsToBounds = true
+//        i.layer.cornerRadius = 20
+        i.translatesAutoresizingMaskIntoConstraints = false
+//        i.contentMode = .scaleAspectFill
         return i
     }()
     
@@ -21,6 +23,7 @@ class BannerCollectionViewCell: UICollectionViewCell{
         super.init(frame: frame)
         setupSubviews()
         setupConstraints()
+//        self.image.layer.cornerRadius = 10
     }
     
     required init?(coder: NSCoder) {
@@ -38,6 +41,8 @@ extension BannerCollectionViewCell {
     func setupConstraints(){
         image.snp.makeConstraints{make in
             make.centerY.equalToSuperview()
+//            make.width.equalTo(300)
+//            make.height.equalTo(112)
         }
     }
 }

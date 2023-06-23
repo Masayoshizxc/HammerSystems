@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class TableViewHeader: UIView {
     
@@ -18,6 +19,7 @@ class TableViewHeader: UIView {
         cv.dataSource = self
         cv.delegate = self
         cv.register(BannerCollectionViewCell.self)
+        cv.showsHorizontalScrollIndicator = false
         return cv
     }()
     
@@ -25,6 +27,8 @@ class TableViewHeader: UIView {
         super.init(frame: frame)
         backgroundColor = .red
         setItems(cell: Banner.fetch())
+        setupSubviews()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -37,6 +41,18 @@ class TableViewHeader: UIView {
     
 }
 
+extension TableViewHeader {
+    func setupSubviews(){
+        self.addSubview(collectionView)
+    }
+    
+    func setupConstraints(){
+        collectionView.snp.makeConstraints{make in
+            make.left.top.right.bottom.equalToSuperview()
+        }
+    }
+}
+
 extension TableViewHeader: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
     
@@ -47,7 +63,12 @@ extension TableViewHeader: UICollectionViewDelegateFlowLayout, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.getReuseCell(BannerCollectionViewCell.self, indexPath: indexPath)
         cell.image.image = items[indexPath.row].img
+        cell.layer.cornerRadius = 10
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 300, height: 112)
     }
     
     

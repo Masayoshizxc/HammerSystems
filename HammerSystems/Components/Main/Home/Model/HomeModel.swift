@@ -12,6 +12,7 @@ struct Pizza {
     var title: String
     var description: String
     var price: String
+    
 }
 
 struct Banner {
