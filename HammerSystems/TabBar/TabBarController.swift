@@ -55,14 +55,12 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupConstraints()
         configureTabs()
         UITabBar.appearance().tintColor = R.color.red()
         UITabBar.appearance().unselectedItemTintColor = R.color.gray()
 
         navigationItem.hidesBackButton = true
-        navigationController?.navigationBar.backgroundColor = .none
-//        tabBarController?.tabBar.isTranslucent = true
+        navigationController?.navigationBar.backgroundColor = R.color.white()
         tabBarController?.tabBar.backgroundColor = R.color.white()
 
     }
@@ -89,17 +87,6 @@ class TabBarController: UITabBarController {
             profileCoordinator.navigationController,
             basketCoordinator.navigationController
         ]
-//        tabBar.alpha = 0.95
-//        let tab = UITabBarAppearance()
-//        tab.backgroundEffect = .none
-//        tab.shadowColor = .clear
-//
-//        tab.stackedItemWidth = 50
-//        tab.stackedItemSpacing = 50
-////        tab.stackedItemPositioning =
-//
-//        tabBar.standardAppearance = tab
-//        tabBar.scrollEdgeAppearance = tab
 
     }
 
@@ -115,7 +102,7 @@ class TabBarController: UITabBarController {
         bg.layer.opacity = 40
         tabBar.addSubview(bg)
         let clicked = UIView()
-//        clicked.backgroundColor = R.color.tint()
+
         clicked.layer.cornerRadius = 15
         bg.snp.makeConstraints {make in
             make.width.equalTo(296)
@@ -123,11 +110,7 @@ class TabBarController: UITabBarController {
             make.left.right.equalToSuperview().inset(59)
             make.bottom.equalToSuperview().inset(30)
         }
-//        clicked.snp.makeConstraints {make in
-//            make.width.equalTo(106)
-//            make.height.equalTo(83)
-//        }
-//        bg.addSubview(clicked)
+
 
     }
 

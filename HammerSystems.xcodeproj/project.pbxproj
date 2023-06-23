@@ -27,6 +27,19 @@
 		AEECB0242A44BB3D003616F6 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0232A44BB3D003616F6 /* BasketViewController.swift */; };
 		AEECB0262A44BB97003616F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0252A44BB97003616F6 /* ProfileViewController.swift */; };
 		AEECB0282A44BBE7003616F6 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0272A44BBE7003616F6 /* ContactsViewController.swift */; };
+		AEECB0312A457B88003616F6 /* sf-black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEECB0292A457B87003616F6 /* sf-black.otf */; };
+		AEECB0322A457B88003616F6 /* sf-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEECB02A2A457B88003616F6 /* sf-bold.otf */; };
+		AEECB0332A457B88003616F6 /* sf-thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEECB02B2A457B88003616F6 /* sf-thin.otf */; };
+		AEECB0342A457B88003616F6 /* sf-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEECB02C2A457B88003616F6 /* sf-light.otf */; };
+		AEECB0352A457B88003616F6 /* sf-ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEECB02D2A457B88003616F6 /* sf-ultralight.otf */; };
+		AEECB0362A457B88003616F6 /* sf-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEECB02E2A457B88003616F6 /* sf-medium.otf */; };
+		AEECB0372A457B88003616F6 /* sf-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEECB02F2A457B88003616F6 /* sf-semibold.otf */; };
+		AEECB0382A457B88003616F6 /* sf-heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AEECB0302A457B88003616F6 /* sf-heavy.otf */; };
+		AEECB03A2A45A789003616F6 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0392A45A789003616F6 /* HomePresenter.swift */; };
+		AEECB03C2A45A901003616F6 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB03B2A45A901003616F6 /* HomeModel.swift */; };
+		AEECB0412A45BC71003616F6 /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0402A45BC71003616F6 /* TableViewHeader.swift */; };
+		AEECB0432A45C2A2003616F6 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0422A45C2A2003616F6 /* BannerCollectionViewCell.swift */; };
+		AEECB0452A45C4B1003616F6 /* Extension + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0442A45C4B1003616F6 /* Extension + CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +65,19 @@
 		AEECB0232A44BB3D003616F6 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		AEECB0252A44BB97003616F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AEECB0272A44BBE7003616F6 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		AEECB0292A457B87003616F6 /* sf-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-black.otf"; sourceTree = "<group>"; };
+		AEECB02A2A457B88003616F6 /* sf-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-bold.otf"; sourceTree = "<group>"; };
+		AEECB02B2A457B88003616F6 /* sf-thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-thin.otf"; sourceTree = "<group>"; };
+		AEECB02C2A457B88003616F6 /* sf-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-light.otf"; sourceTree = "<group>"; };
+		AEECB02D2A457B88003616F6 /* sf-ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ultralight.otf"; sourceTree = "<group>"; };
+		AEECB02E2A457B88003616F6 /* sf-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-medium.otf"; sourceTree = "<group>"; };
+		AEECB02F2A457B88003616F6 /* sf-semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-semibold.otf"; sourceTree = "<group>"; };
+		AEECB0302A457B88003616F6 /* sf-heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-heavy.otf"; sourceTree = "<group>"; };
+		AEECB0392A45A789003616F6 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		AEECB03B2A45A901003616F6 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		AEECB0402A45BC71003616F6 /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
+		AEECB0422A45C2A2003616F6 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		AEECB0442A45C4B1003616F6 /* Extension + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + CollectionView.swift"; sourceTree = "<group>"; };
 		F0C01D920E29A41AC9E1A360 /* Pods-HammerSystems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HammerSystems.release.xcconfig"; path = "Target Support Files/Pods-HammerSystems/Pods-HammerSystems.release.xcconfig"; sourceTree = "<group>"; };
 		F2B3738E37F2A1CE4574019D /* Pods_HammerSystems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HammerSystems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +98,14 @@
 			isa = PBXGroup;
 			children = (
 				AEECAFF12A44A842003616F6 /* .swiftlint.yml */,
+				AEECB0292A457B87003616F6 /* sf-black.otf */,
+				AEECB02A2A457B88003616F6 /* sf-bold.otf */,
+				AEECB0302A457B88003616F6 /* sf-heavy.otf */,
+				AEECB02C2A457B88003616F6 /* sf-light.otf */,
+				AEECB02E2A457B88003616F6 /* sf-medium.otf */,
+				AEECB02F2A457B88003616F6 /* sf-semibold.otf */,
+				AEECB02B2A457B88003616F6 /* sf-thin.otf */,
+				AEECB02D2A457B88003616F6 /* sf-ultralight.otf */,
 				AE82EDFA2A449DA300C366C3 /* HammerSystems */,
 				AE82EDF92A449DA300C366C3 /* Products */,
 				D8B49F612A15B10C96813FE7 /* Pods */,
@@ -134,6 +168,7 @@
 		AEECB0002A44B158003616F6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AEECB0442A45C4B1003616F6 /* Extension + CollectionView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -160,6 +195,7 @@
 		AEECB0092A44B9CE003616F6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AEECB03D2A45AC08003616F6 /* Cell&Header */,
 				AEECB00C2A44B9E5003616F6 /* Presenter */,
 				AEECB00B2A44B9E1003616F6 /* View */,
 				AEECB00A2A44B9DE003616F6 /* Model */,
@@ -171,6 +207,7 @@
 		AEECB00A2A44B9DE003616F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AEECB03B2A45A901003616F6 /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +223,7 @@
 		AEECB00C2A44B9E5003616F6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				AEECB0392A45A789003616F6 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -289,6 +327,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		AEECB03D2A45AC08003616F6 /* Cell&Header */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB0402A45BC71003616F6 /* TableViewHeader.swift */,
+				AEECB0422A45C2A2003616F6 /* BannerCollectionViewCell.swift */,
+			);
+			path = "Cell&Header";
+			sourceTree = "<group>";
+		};
 		D8B49F612A15B10C96813FE7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,7 +415,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEECAFF22A44A842003616F6 /* .swiftlint.yml in Resources */,
+				AEECB0362A457B88003616F6 /* sf-medium.otf in Resources */,
+				AEECB0332A457B88003616F6 /* sf-thin.otf in Resources */,
+				AEECB0352A457B88003616F6 /* sf-ultralight.otf in Resources */,
+				AEECB0342A457B88003616F6 /* sf-light.otf in Resources */,
+				AEECB0382A457B88003616F6 /* sf-heavy.otf in Resources */,
+				AEECB0322A457B88003616F6 /* sf-bold.otf in Resources */,
 				AE82EE082A449DA400C366C3 /* LaunchScreen.storyboard in Resources */,
+				AEECB0372A457B88003616F6 /* sf-semibold.otf in Resources */,
+				AEECB0312A457B88003616F6 /* sf-black.otf in Resources */,
 				AE82EE052A449DA400C366C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,8 +495,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEECB0452A45C4B1003616F6 /* Extension + CollectionView.swift in Sources */,
 				AEECAFF52A44AA53003616F6 /* Coordinator.swift in Sources */,
 				AEECB0042A44B1CF003616F6 /* R.generated.swift in Sources */,
+				AEECB03C2A45A901003616F6 /* HomeModel.swift in Sources */,
 				AEECB0242A44BB3D003616F6 /* BasketViewController.swift in Sources */,
 				AE82EDFC2A449DA300C366C3 /* AppDelegate.swift in Sources */,
 				AEECB0132A44BA52003616F6 /* ContactsCoordinator.swift in Sources */,
@@ -451,9 +508,12 @@
 				AEECB00E2A44B9EC003616F6 /* HomeViewController.swift in Sources */,
 				AEECAFFA2A44ABCD003616F6 /* TabBarController.swift in Sources */,
 				AEECB0022A44B170003616F6 /* BaseViewController.swift in Sources */,
+				AEECB0432A45C2A2003616F6 /* BannerCollectionViewCell.swift in Sources */,
+				AEECB03A2A45A789003616F6 /* HomePresenter.swift in Sources */,
 				AEECB0102A44BA3E003616F6 /* HomeCoordinator.swift in Sources */,
 				AEECB0222A44BACD003616F6 /* BasketCoordinator.swift in Sources */,
 				AEECB0262A44BB97003616F6 /* ProfileViewController.swift in Sources */,
+				AEECB0412A45BC71003616F6 /* TableViewHeader.swift in Sources */,
 				AEECAFF72A44ABBF003616F6 /* MainCoordinator.swift in Sources */,
 				AE82EDFE2A449DA300C366C3 /* SceneDelegate.swift in Sources */,
 			);
