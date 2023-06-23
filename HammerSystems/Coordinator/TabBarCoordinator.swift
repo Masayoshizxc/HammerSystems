@@ -14,7 +14,7 @@ class TabBarCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     var childCoordinators = [Coordinator]()
 
     var navigationController: UINavigationController
-
+    
     var parentCoordinator: Coordinator?
 
     var tabbarController: UITabBarController
@@ -26,6 +26,7 @@ class TabBarCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
 
     func start() {
         let vc = TabBarController()
+//        navigationController.navigationBar.backgroundColor = R.color.viewBackground()
         navigationController.pushViewController(vc, animated: false)
     }
 

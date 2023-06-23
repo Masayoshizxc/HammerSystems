@@ -14,7 +14,7 @@ class HomeViewController: BaseViewController {
 
     private lazy var location: UIButton = {
         let b = UIButton()
-        b.titleLabel?.font = UIFont(name: "sf-semibold", size: 17)
+        b.titleLabel?.font = UIFont(name: "SFUIDisplay-Medium", size: 17)
         b.setTitleColor(.black, for: .normal)
         b.setImage(R.image.navLoc(), for: .normal)
         b.setTitle("Москва", for: .normal)
@@ -30,7 +30,9 @@ class HomeViewController: BaseViewController {
         t.delegate = self
         t.dataSource = self
         t.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        t.tableHeaderView = TableViewHeader(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 200))
+        t.tableHeaderView = BannerViewHeader(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 122))
+        t.backgroundColor = R.color.viewBackground()
+        t.separatorInset = .zero
         return t
     }()
     
@@ -60,8 +62,8 @@ class HomeViewController: BaseViewController {
 extension HomeViewController {
     
     func setupSubviews(){
-//        view.addSubview(location)
         self.navigationController?.navigationBar.addSubview(location)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         view.addSubview(tableView)
     }
     
@@ -72,6 +74,7 @@ extension HomeViewController {
         }
         tableView.snp.makeConstraints{make in
             make.top.left.right.bottom.equalToSuperview()
+            
         }
     }
 }
@@ -85,8 +88,23 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) 
-        cell.backgroundColor = .purple
+        cell.backgroundColor = R.color.white()
         return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section\(section)"
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return CategoriesViewHeader()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
     }
     
     

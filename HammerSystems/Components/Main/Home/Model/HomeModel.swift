@@ -25,4 +25,16 @@ struct Banner {
     }
 }
 
+struct Categories {
+    var title: String
+    
+    static func fetch() -> [Categories]{
+        var c1 = Categories(title: "Пицца")
+        var c2 = Categories(title: "Комбо")
+        var c3 = Categories(title: "Десерты")
+        var c4 = Categories(title: "Напитки")
+        return [c1,c2,c3,c4]
+    }
+}
+
 

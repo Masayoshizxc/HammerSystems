@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class TableViewHeader: UIView {
+class BannerViewHeader: UIView {
     
     var items = [Banner]()
     
@@ -20,12 +20,12 @@ class TableViewHeader: UIView {
         cv.delegate = self
         cv.register(BannerCollectionViewCell.self)
         cv.showsHorizontalScrollIndicator = false
+        cv.backgroundColor = R.color.viewBackground()
         return cv
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .red
         setItems(cell: Banner.fetch())
         setupSubviews()
         setupConstraints()
@@ -41,19 +41,21 @@ class TableViewHeader: UIView {
     
 }
 
-extension TableViewHeader {
+extension BannerViewHeader {
     func setupSubviews(){
         self.addSubview(collectionView)
     }
     
     func setupConstraints(){
         collectionView.snp.makeConstraints{make in
-            make.left.top.right.bottom.equalToSuperview()
+            make.left.right.equalToSuperview()
+            make.top.equalToSuperview().inset(10)
+            make.height.equalTo(130)
         }
     }
 }
 
-extension TableViewHeader: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
+extension BannerViewHeader: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

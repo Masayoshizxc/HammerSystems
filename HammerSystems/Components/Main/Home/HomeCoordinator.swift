@@ -22,6 +22,8 @@ class HomeCoordinator: Coordinator {
         let vc = HomeViewController()
         vc.coordinator = self
         vc.tabBarItem = TabBarItems.first.tabbarItem
+        navigationController.navigationBar.backgroundColor = R.color.viewBackground()
+        navigationController.navigationBar.barTintColor = R.color.viewBackground()
         navigationController.pushViewController(vc, animated: true)
     }
 
