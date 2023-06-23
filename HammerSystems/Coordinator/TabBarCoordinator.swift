@@ -35,4 +35,3 @@ class TabBarCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     }
 
 }
-

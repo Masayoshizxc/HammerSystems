@@ -10,7 +10,6 @@
 		4FD02F145952F7FFD250A9AC /* Pods_HammerSystems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B3738E37F2A1CE4574019D /* Pods_HammerSystems.framework */; };
 		AE82EDFC2A449DA300C366C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE82EDFB2A449DA300C366C3 /* AppDelegate.swift */; };
 		AE82EDFE2A449DA300C366C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE82EDFD2A449DA300C366C3 /* SceneDelegate.swift */; };
-		AE82EE002A449DA300C366C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE82EDFF2A449DA300C366C3 /* ViewController.swift */; };
 		AE82EE052A449DA400C366C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE82EE042A449DA400C366C3 /* Assets.xcassets */; };
 		AE82EE082A449DA400C366C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE82EE062A449DA400C366C3 /* LaunchScreen.storyboard */; };
 		AEECAFF22A44A842003616F6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AEECAFF12A44A842003616F6 /* .swiftlint.yml */; };
@@ -20,6 +19,14 @@
 		AEECAFFC2A44AF60003616F6 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECAFFB2A44AF60003616F6 /* TabBarCoordinator.swift */; };
 		AEECB0022A44B170003616F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0012A44B170003616F6 /* BaseViewController.swift */; };
 		AEECB0042A44B1CF003616F6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0032A44B1CF003616F6 /* R.generated.swift */; };
+		AEECB00E2A44B9EC003616F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB00D2A44B9EC003616F6 /* HomeViewController.swift */; };
+		AEECB0102A44BA3E003616F6 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB00F2A44BA3E003616F6 /* HomeCoordinator.swift */; };
+		AEECB0132A44BA52003616F6 /* ContactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0122A44BA52003616F6 /* ContactsCoordinator.swift */; };
+		AEECB01C2A44BA9B003616F6 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB01B2A44BA9B003616F6 /* ProfileCoordinator.swift */; };
+		AEECB0222A44BACD003616F6 /* BasketCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0212A44BACD003616F6 /* BasketCoordinator.swift */; };
+		AEECB0242A44BB3D003616F6 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0232A44BB3D003616F6 /* BasketViewController.swift */; };
+		AEECB0262A44BB97003616F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0252A44BB97003616F6 /* ProfileViewController.swift */; };
+		AEECB0282A44BBE7003616F6 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEECB0272A44BBE7003616F6 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +34,6 @@
 		AE82EDF82A449DA300C366C3 /* HammerSystems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HammerSystems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE82EDFB2A449DA300C366C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE82EDFD2A449DA300C366C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE82EDFF2A449DA300C366C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE82EE042A449DA400C366C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE82EE072A449DA400C366C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE82EE092A449DA400C366C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +44,14 @@
 		AEECAFFB2A44AF60003616F6 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		AEECB0012A44B170003616F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AEECB0032A44B1CF003616F6 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		AEECB00D2A44B9EC003616F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AEECB00F2A44BA3E003616F6 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		AEECB0122A44BA52003616F6 /* ContactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCoordinator.swift; sourceTree = "<group>"; };
+		AEECB01B2A44BA9B003616F6 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		AEECB0212A44BACD003616F6 /* BasketCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCoordinator.swift; sourceTree = "<group>"; };
+		AEECB0232A44BB3D003616F6 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		AEECB0252A44BB97003616F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AEECB0272A44BBE7003616F6 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		F0C01D920E29A41AC9E1A360 /* Pods-HammerSystems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HammerSystems.release.xcconfig"; path = "Target Support Files/Pods-HammerSystems/Pods-HammerSystems.release.xcconfig"; sourceTree = "<group>"; };
 		F2B3738E37F2A1CE4574019D /* Pods_HammerSystems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HammerSystems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,7 +93,7 @@
 				AE82EDFB2A449DA300C366C3 /* AppDelegate.swift */,
 				AEECB0032A44B1CF003616F6 /* R.generated.swift */,
 				AE82EDFD2A449DA300C366C3 /* SceneDelegate.swift */,
-				AE82EDFF2A449DA300C366C3 /* ViewController.swift */,
+				AEECB0072A44B9C2003616F6 /* Components */,
 				AEECB0002A44B158003616F6 /* Extensions */,
 				AEECAFFF2A44B151003616F6 /* Reusable */,
 				AEECAFF82A44ABC2003616F6 /* TabBar */,
@@ -122,6 +136,157 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEECB0072A44B9C2003616F6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB0082A44B9C8003616F6 /* Main */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AEECB0082A44B9C8003616F6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB01D2A44BAB2003616F6 /* Basket */,
+				AEECB0172A44BA80003616F6 /* Profile */,
+				AEECB0112A44BA41003616F6 /* Contacts */,
+				AEECB0092A44B9CE003616F6 /* Home */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AEECB0092A44B9CE003616F6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB00C2A44B9E5003616F6 /* Presenter */,
+				AEECB00B2A44B9E1003616F6 /* View */,
+				AEECB00A2A44B9DE003616F6 /* Model */,
+				AEECB00F2A44BA3E003616F6 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AEECB00A2A44B9DE003616F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEECB00B2A44B9E1003616F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB00D2A44B9EC003616F6 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEECB00C2A44B9E5003616F6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AEECB0112A44BA41003616F6 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB0162A44BA79003616F6 /* Presenter */,
+				AEECB0152A44BA75003616F6 /* View */,
+				AEECB0142A44BA71003616F6 /* Model */,
+				AEECB0122A44BA52003616F6 /* ContactsCoordinator.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		AEECB0142A44BA71003616F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEECB0152A44BA75003616F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB0272A44BBE7003616F6 /* ContactsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEECB0162A44BA79003616F6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AEECB0172A44BA80003616F6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB01A2A44BA90003616F6 /* Presenter */,
+				AEECB0192A44BA8C003616F6 /* View */,
+				AEECB0182A44BA85003616F6 /* Model */,
+				AEECB01B2A44BA9B003616F6 /* ProfileCoordinator.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AEECB0182A44BA85003616F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEECB0192A44BA8C003616F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB0252A44BB97003616F6 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEECB01A2A44BA90003616F6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AEECB01D2A44BAB2003616F6 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB0202A44BAC1003616F6 /* Presenter */,
+				AEECB01F2A44BABE003616F6 /* View */,
+				AEECB01E2A44BABB003616F6 /* Model */,
+				AEECB0212A44BACD003616F6 /* BasketCoordinator.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		AEECB01E2A44BABB003616F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEECB01F2A44BABE003616F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEECB0232A44BB3D003616F6 /* BasketViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEECB0202A44BAC1003616F6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		D8B49F612A15B10C96813FE7 /* Pods */ = {
@@ -266,7 +431,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --fix && ${PODS_ROOT}/SwiftLint/swiftlint\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" \n#--fix && ${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -276,12 +441,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEECAFF52A44AA53003616F6 /* Coordinator.swift in Sources */,
-				AE82EE002A449DA300C366C3 /* ViewController.swift in Sources */,
 				AEECB0042A44B1CF003616F6 /* R.generated.swift in Sources */,
+				AEECB0242A44BB3D003616F6 /* BasketViewController.swift in Sources */,
 				AE82EDFC2A449DA300C366C3 /* AppDelegate.swift in Sources */,
+				AEECB0132A44BA52003616F6 /* ContactsCoordinator.swift in Sources */,
+				AEECB0282A44BBE7003616F6 /* ContactsViewController.swift in Sources */,
+				AEECB01C2A44BA9B003616F6 /* ProfileCoordinator.swift in Sources */,
 				AEECAFFC2A44AF60003616F6 /* TabBarCoordinator.swift in Sources */,
+				AEECB00E2A44B9EC003616F6 /* HomeViewController.swift in Sources */,
 				AEECAFFA2A44ABCD003616F6 /* TabBarController.swift in Sources */,
 				AEECB0022A44B170003616F6 /* BaseViewController.swift in Sources */,
+				AEECB0102A44BA3E003616F6 /* HomeCoordinator.swift in Sources */,
+				AEECB0222A44BACD003616F6 /* BasketCoordinator.swift in Sources */,
+				AEECB0262A44BB97003616F6 /* ProfileViewController.swift in Sources */,
 				AEECAFF72A44ABBF003616F6 /* MainCoordinator.swift in Sources */,
 				AE82EDFE2A449DA300C366C3 /* SceneDelegate.swift in Sources */,
 			);

@@ -12,26 +12,33 @@ enum TabBarItems: CaseIterable {
     case first
     case second
     case third
+    case fourth
 
     var tabbarItem: UITabBarItem {
         switch self {
         case .first:
             return .init(
-                title: nil,
-                image: R.image.homePage(),
+                title: "Меню",
+                image: R.image.firstPage(),
                 tag: 1
             )
 
         case .second:
             return .init(
-                title: nil,
-                image: R.image.searchPage(),
+                title: "Контакты",
+                image: R.image.secondPage(),
                 tag: 1
             )
         case .third:
             return .init(
-                title: nil,
-                image: R.image.libraryPage(),
+                title: "Профиль",
+                image: R.image.thirdPage(),
+                tag: 1
+            )
+        case .fourth:
+            return .init(
+                title: "Корзина",
+                image: R.image.fourthPage(),
                 tag: 1
             )
         }
@@ -42,20 +49,21 @@ class TabBarController: UITabBarController {
     weak var coordinator: TabBarCoordinator?
 
     let homeCoordinator = HomeCoordinator(navigationController: UINavigationController())
-    let searchCoordinator = SearchCoordinator(navigationController: UINavigationController())
-    let libraryCoordinator = LibraryCoordinator(navigationController: UINavigationController())
+    let contactsCoordinator = ContactsCoordinator(navigationController: UINavigationController())
+    let profileCoordinator = ProfileCoordinator(navigationController: UINavigationController())
+    let basketCoordinator = BasketCoordinator(navigationController: UINavigationController())
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupConstraints()
         configureTabs()
-        UITabBar.appearance().tintColor = R.color.tabbarSelected()
-        UITabBar.appearance().unselectedItemTintColor = R.color.tabbarUnselected()
+        UITabBar.appearance().tintColor = R.color.red()
+        UITabBar.appearance().unselectedItemTintColor = R.color.gray()
 
         navigationItem.hidesBackButton = true
-        navigationController?.navigationBar.backgroundColor = R.color.tint()
-        tabBarController?.tabBar.isTranslucent = true
-        tabBarController?.tabBar.backgroundColor = .none
+        navigationController?.navigationBar.backgroundColor = .none
+//        tabBarController?.tabBar.isTranslucent = true
+        tabBarController?.tabBar.backgroundColor = R.color.white()
 
     }
 
@@ -71,24 +79,26 @@ class TabBarController: UITabBarController {
 
     private func configureTabs() {
         homeCoordinator.start()
-        searchCoordinator.start()
-        libraryCoordinator.start()
+        contactsCoordinator.start()
+        profileCoordinator.start()
+        basketCoordinator.start()
 
         viewControllers = [
             homeCoordinator.navigationController,
-            searchCoordinator.navigationController,
-            libraryCoordinator.navigationController
+            contactsCoordinator.navigationController,
+            profileCoordinator.navigationController,
+            basketCoordinator.navigationController
         ]
-        tabBar.alpha = 0.95
-        let tab = UITabBarAppearance()
-        tab.backgroundEffect = .none
-        tab.shadowColor = .clear
-
-        tab.stackedItemWidth = 50
-        tab.stackedItemSpacing = 50
-//        tab.stackedItemPositioning =
-
-        tabBar.standardAppearance = tab
+//        tabBar.alpha = 0.95
+//        let tab = UITabBarAppearance()
+//        tab.backgroundEffect = .none
+//        tab.shadowColor = .clear
+//
+//        tab.stackedItemWidth = 50
+//        tab.stackedItemSpacing = 50
+////        tab.stackedItemPositioning =
+//
+//        tabBar.standardAppearance = tab
 //        tabBar.scrollEdgeAppearance = tab
 
     }
@@ -105,7 +115,7 @@ class TabBarController: UITabBarController {
         bg.layer.opacity = 40
         tabBar.addSubview(bg)
         let clicked = UIView()
-        clicked.backgroundColor = R.color.tint()
+//        clicked.backgroundColor = R.color.tint()
         clicked.layer.cornerRadius = 15
         bg.snp.makeConstraints {make in
             make.width.equalTo(296)
@@ -122,4 +132,3 @@ class TabBarController: UITabBarController {
     }
 
 }
-

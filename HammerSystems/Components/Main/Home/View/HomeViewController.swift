@@ -1,17 +1,20 @@
 //
-//  BaseViewController.swift
+//  File.swift
 //  HammerSystems
 //
 //  Created by Adilet on 22/6/23.
 //
 
 import UIKit
+import SnapKit
 
-class BaseViewController: UIViewController {
+class HomeViewController: BaseViewController {
+
+    var coordinator: HomeCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = R.color.viewBackground()
+
     }
 
 }

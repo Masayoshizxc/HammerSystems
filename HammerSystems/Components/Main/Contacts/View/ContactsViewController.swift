@@ -1,5 +1,5 @@
 //
-//  BaseViewController.swift
+//  ContactsViewController.swift
 //  HammerSystems
 //
 //  Created by Adilet on 22/6/23.
@@ -7,11 +7,10 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
-
+class ContactsViewController: BaseViewController {
+    var coordinator: ContactsCoordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = R.color.viewBackground()
     }
 
 }

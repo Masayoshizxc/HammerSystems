@@ -19,7 +19,6 @@ struct _R {
   var info: info { .init(bundle: bundle) }
   var font: font { .init(bundle: bundle) }
   var file: file { .init(bundle: bundle) }
-  
 
   func color(bundle: Foundation.Bundle) -> color {
     .init(bundle: bundle)
@@ -38,7 +37,7 @@ struct _R {
   }
   func validate() throws {
     try self.font.validate()
-    
+
   }
 
   struct project {
@@ -61,8 +60,11 @@ struct _R {
   struct image {
     let bundle: Foundation.Bundle
 //      var play: RswiftResources.ImageResource { .init(name: "PlayIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
-      
-
+      var firstPage: RswiftResources.ImageResource { .init(name: "1p", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var secondPage: RswiftResources.ImageResource { .init(name: "2p", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var thirdPage: RswiftResources.ImageResource { .init(name: "3p", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var fourthPage: RswiftResources.ImageResource { .init(name: "4p", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
+      var navLoc: RswiftResources.ImageResource { .init(name: "navLoc", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil)}
   }
 
 // MARK: info
@@ -113,7 +115,7 @@ struct _R {
     }
   }
 
-//MARK: Fonts
+// MARK: Fonts
   struct font: Sequence {
     let bundle: Foundation.Bundle
 //      var robotoMedium: RswiftResources.FontResource { .init(name: "Roboto-Medium", bundle: bundle, filename: "Roboto_Medium.ttf")}
@@ -140,8 +142,6 @@ struct _R {
 //    /// Resource file `Commissioner-Black.ttf`.
 //    var commissionerBlackTtf: RswiftResources.FileResource { .init(name: "Commissioner-Black", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
 
-   
   }
 
 }
-
